@@ -5,6 +5,7 @@ AIM
 To develop a Single Page Application (SPA) using React.js and React Router
 
 PROGRAM
+```
 main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -16,8 +17,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </BrowserRouter>
 );
-
+```
 App.jsx
+```
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -45,8 +47,9 @@ export default function App() {
     </>
   );
 }
-
+```
 ProtectedRoute.jsx
+```
 import { Navigate, Outlet } from "react-router-dom";
 
 export default function ProtectedRoute() {
@@ -72,8 +75,9 @@ export default function Login() {
     </div>
   );
 }
-
+```
 pages/Dashboard.jsx
+```
 import { Link, Outlet, useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
@@ -100,7 +104,7 @@ export default function Dashboard() {
     </div>
   );
 }
-
+```
 OUTPUT
 <img width="1917" height="986" alt="image" src="https://github.com/user-attachments/assets/7de8d7f7-6b53-4e9f-9557-db58b962b5af" />
 <img width="1918" height="977" alt="image" src="https://github.com/user-attachments/assets/16274e1a-6f2e-4a1b-a6db-52c0f7d47fce" />
